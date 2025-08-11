@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+               input[type=text], select{
+                width: 100%;
+            padding: 12px 20px;
+            margin: 5px 0;
+            display: inline-block;
+            transition: width 0.4s ease-out;
+               }
+               input[type=text]:focus{
+                height: 30px;
+
+               }
+               input[type=submit]{
+                background-color: grey;
+                width: 100%;
+                padding: 10px;
+                margin: 8px 0;
+               }
+               div{
+                background-color: #f2f2f2;
+                padding: 20px;
+               }
+        </style>
+    </head>
+    <body>
+        <h1>Using CSS to style an HTML Form</h1>
+        <div>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="First Name" placeholder="Your Name">
+                 
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="Last Name" placeholder="Your Last Name">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

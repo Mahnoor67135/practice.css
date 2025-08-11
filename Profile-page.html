@@ -1,0 +1,120 @@
+<!Doctype html>
+<html>
+    <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar{
+             display: flex;
+             justify-content: space-between;
+             background-color: dodgerblue;
+            }
+            .logo{
+                padding: 10px;
+                font-size: 35px;
+            }
+            .options a{
+                 
+                 padding: 5px;
+                 font-size: 20px;
+                 text-decoration: none;
+                 color: white;
+            }
+            .options{
+                padding: 20px;
+            }
+            .options a:hover{
+                color: #f1f1f1;
+                text-decoration: underline;
+                font-size: 20px;
+            }
+            .fa-house, .fa-user, .fa-gear, .fa-user-group{
+                padding: 5px;
+                margin: 5px;
+                color: white;
+            }
+            .nav, .logo-bar{
+                margin: 20px;
+            }
+            .profilesetting{
+                
+            }
+            .icon{
+             padding: 80px;
+                float: left;
+                margin-right: 40px;
+                color: gray;
+                
+
+            }
+            .text{
+                font-size: 20px;
+                text-decoration: none;
+                padding: 20px;
+            }
+
+            .button{
+                width: 410px;
+                height: 40px;
+                background-color: dodgerblue;
+            }
+            .edit{
+                   display: flex;
+                   justify-content: center;
+                    
+            }
+            
+            
+            </style>
+    </head>
+    <body>
+        <div class="navbar">
+            
+            <div class="logo" style="color: white;">facebook</div>
+            <div class="logo-bar">
+                <input type="text" placeholder="search" style="width: 200px; height: 30px; border-radius: 15px; border-color: dodgerblue;">
+            </div>
+            <div class="options">
+                    <i class="fa-regular fa-house"></i><a href="index.html">Home</a>
+                    <i class="fa-regular fa-user"></i><a href="Profile-page.html">Edit Profile</a>
+                    <i class="fa-solid fa-user-group"></i><a href="Create-groups.html">Create Groups</a>
+                    <i class="fa-solid fa-gear"></i><a href="settings.html">Settings</a>
+
+                </div>
+            </div>
+           
+           <div class="profilesetting">
+            <div class="icon" style=" background-color: #f1f1f1; overflow: auto; padding-bottom: 300px;">
+                <i class="fa-solid fa-circle-user" style="font-size: 100px; padding: 20px;"></i>
+                <h3 style="font-size: 20px;">Profile Settings</h3>
+            
+            <a href="profile page.html" class="text">Edit Profile</a></div>
+                <div class="icon-labelform" style="padding: 20px;">
+                <form>
+                    <label style="font-size: 20px;">First Name</label><br><br>
+                    <input type="text" placeholder="Enter Your First Name"  style="width: 300px; padding: 15px; border-radius: 10px;"></br></br>
+
+                    <label style="font-size: 20px;">Last Name</label><br><br>
+                    <input type="email" placeholder="Enter Your Last Name"  style="width: 300px; padding: 15px; border-radius: 10px;"></br></br>
+
+                    <label style="font-size: 20px;">Email</label><br><br>
+                    <input type="text" placeholder="example@gmail.com"  style="width: 300px; padding: 15px; border-radius: 10px;"></br></br>
+                    <label style="font-size: 20px;">Bio:</label><br><br>
+                    <textarea rows="5"  style="width: 310px; padding: 10px; border-radius: 10px;">Write about yourself.</textarea></br></br>
+                    <label style="font-size: 20px;">Choose Your Photo</label><br><br>
+                    <input type="file"><br><br>
+                    <button type="submit" style="padding: 10px; background-color: dodgerblue; color: white; border-radius: 15px;">Save Changes</button> 
+                   </form>
+            </div>
+            </div>
+                  </div>
+                  
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!Doctype html>
+<html>
+    <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar{
+             display: flex;
+             justify-content: space-between;
+             background-color: dodgerblue;
+            }
+            .logo{
+                padding: 10px;
+                font-size: 35px;
+            }
+            .options a{
+                 
+                 padding: 5px;
+                 font-size: 20px;
+                 text-decoration: none;
+                 color: white;
+            }
+            .options{
+                padding: 20px;
+            }
+            .options a:hover{
+                color: #f1f1f1;
+                text-decoration: underline;
+                
+            }
+            .fa-house, .fa-user, .fa-gear, .fa-user-group{
+                padding: 5px;
+                margin: 5px;
+                color: white;
+            }
+            .nav, .logo-bar{
+                margin: 20px;
+            }
+            .button{
+                width: 410px;
+                height: 40px;
+                background-color: dodgerblue;
+            }
+            .groups{
+                display: flex;
+                justify-content: center;
+            }
+            .group{
+                padding: 40px;
+                float: left;
+                margin: 150px;
+               
+                
+            }
+            </style>
+    </head>
+    <body>
+        <div class="navbar">
+            
+            <div class="logo" style="color: white; border-radius: 15px;">facebook</div>
+            <div class="logo-bar">
+                <input type="text" placeholder="search" style="width: 200px; height: 30px; border-radius: 15px; border-color: dodgerblue;">
+            </div>
+            <div class="options">
+                    <i class="fa-regular fa-house"></i><a href="index.html">Home</a>
+                    <i class="fa-regular fa-user"></i><a href="Profile-page.html">Edit Profile</a>
+                    <i class="fa-solid fa-user-group"></i><a href="Create-groups.html">Create Groups</a>
+                    <i class="fa-solid fa-gear"></i><a href="settings.html">Settings</a>
+
+                </div>
+            </div>
+             
+            <div class="content" style="background-color: #f1f1f1; height: 650px; overflow: auto;">
+                <div class="group" style="background-color: white; border-radius: 100px 20px 100px 20px;">
+                <p>Continue setting up your group <span style="color: green;">0 to 5</span> steps completed.</p>
+               <i class="fa-solid fa-layer-group"></i>
+               <span>Invite Members</span><br>
+
+               <i class="fa-solid fa-object-group"></i>
+               <span>Group Name</span><br>
+
+               <i class="fa-regular fa-image"></i>
+               <span>Add a Cover Photo</span><br>
+
+               <i class="fa-solid fa-pen"></i>
+               <span>Add a Description</span><br>
+               <i class="fa-solid fa-pen-to-square"></i>
+               <span>Create Group</span>
+
+</div>
+       <div class="group-create">
+                    <h2>Create a Group</h2>
+                    <form>
+                        <label>Group Name:</label><br>
+                        <input type="text" placeholder="Enter Group Name" style="width: 500px; padding: 10px; border-radius: 15px; margin-top: 10px; border-color: silver;"><br><br>
+
+                        <label>Add a Cover Photo:</label><br><br>
+                         <input type="file"><br><br>
+                        <label>Description</label><br>
+                        <textarea rows="2" style="padding: 20px; width: 500px; border-radius: 15px; margin-top: 10px; border-color: silver;">What is this group about?</textarea>
+                         <br><br>
+                        <label style="font-size: 18px;">Privacy:</label><br><br>
+                        <select style="width: 500px; padding: 10px; border-radius: 15px;">
+                            <option value="public">Public</option>
+                            <option value="private">Private</option>
+                        </select><br><br>
+                        <button type="onclick" style="width: 100px; padding: 10px; background-color: dodgerblue; color: white; border-radius: 15px; border-color: silver;">Create</button>
+                    
+                    </form>
+                </div>
+</div>
+    </body>
+</html>

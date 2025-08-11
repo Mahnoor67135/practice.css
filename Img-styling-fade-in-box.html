@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+         .container{
+            position: relative;
+            width: 50%;
+         }
+         .image{
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            display: block;
+            
+         }
+         .overlay{
+            position: absolute;
+            opacity: 0;
+            transition: .5s ease;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        
+         }
+        .container:hover .image{
+                opacity: 0.1;
+        }
+        .container:hover .overlay{
+            opacity: 1;
+        }
+        .text{
+            position: absolute;
+            background-color: green;
+            padding: 15px 32px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="../images/img1.webp" class="image">
+            <div class="overlay">
+                <div class="text">Hello</div>
+            </div>
+        </div>
+    </body>
+</html>

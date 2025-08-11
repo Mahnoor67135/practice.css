@@ -1,0 +1,202 @@
+<!Doctype html>
+<html>
+    <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <style>
+            *{
+               box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar{
+             display: flex;
+             justify-content: space-between;
+             background-color: dodgerblue;
+            }
+            .logo{
+                padding: 10px;
+                font-size: 35px;
+                color: white;
+                margin: 10px;
+            }
+            .options a{
+                 
+                 padding: 5px;
+                 font-size: 20px;
+                 text-decoration: none;
+                 color: white;
+            }
+            .options{
+                padding: 20px;
+            }
+            .options a:hover{
+                color: #f1f1f1;
+                text-decoration: underline;
+            }
+            .fa-house, .fa-user, .fa-gear, .fa-user-group{
+                padding: 5px;
+                margin: 5px;
+                color: white;
+            }
+            .nav, .logo-bar{
+                margin: 20px;
+            }
+           .stories {
+            display: inline-block;
+            padding: 8px;
+            background-color: white;
+        
+           }
+           .stories img{
+            border-radius: 20px;
+            box-shadow: 1px 2px 2px 2px black;
+            padding: 8px;
+           }
+           .desc{
+            border-radius: 15px;
+            text-align: center;
+            
+            padding: 2px;
+            margin-top: 10px;
+            font-weight: bold;
+           }
+          .post{
+            padding: 10px;
+            float: left;
+            
+            
+          }
+          .fa-image, .fa-video, .fa-location-crosshairs, .fa-face-smile{
+            padding: 20px;
+            font-size: 15px;
+            color: blue;
+          }
+             
+          span{
+            font-size: 15px;
+          }
+          .content{
+            float: left;
+            padding: 30px;
+            margin: 20px;
+          }
+          .fa-thumbs-up, .fa-share{
+            font-size: 22px;
+            margin-top: 20px;
+            color: blue;
+            padding: 10px;
+            
+          }
+           
+            
+            </style>
+    </head>
+    <body>
+        <div class="navbar">
+            
+            <div class="logo">facebook</div>
+            <div class="logo-bar">
+                <input type="text" placeholder="search" style="width: 200px; height: 30px; border-radius: 15px; border-color: dodgerblue;">
+            </div>
+            <div class="options">
+                    <i class="fa-regular fa-house"></i><a href="index.html">Home</a>
+                    <i class="fa-regular fa-user"></i><a href="Profile-page.html">Edit Profile</a>
+                    <i class="fa-solid fa-user-group"></i><a href="Create-groups.html">Create Groups</a>
+                    <i class="fa-solid fa-gear"></i><a href="settings.html">Settings</a>
+
+                </div>
+            </div>
+
+              <div>
+                <h2>Stories</h2>
+                <div class="stories">
+                    <a href="add story.jpg"><img src="../images/add-story.jpg" width="120px" height="120px"></a>
+                     <div class="desc">Add your story</div>
+                </div>
+                <div class="stories">
+                    <a href="img1.webp"><img src="../images/img1.webp" width="100px" height="150px" ><a></a>
+                    <div class="desc">User 1</div>
+              </div>
+               <div class="stories">
+                    <a href="img2.jpg"><img src="../images/img2.jpg" width="100px" height="150px"></a>
+                    <div class="desc">User 2</div>
+                    </div>
+                   <div class="stories">
+                    <a href="img3.webp"><img src="../images/img3.webp" width="100px" height="150px"></a>
+                    <div class="desc">User 3</div>
+                    </div>
+
+                    <div class="stories">
+                    <a href="img4.jpg"><img src="../images/img4.jpg" width="100px" height="150px"></a>
+                    <div class="desc">User 4</div>
+                 </div>
+                 <div class="stories">
+                    <a href="img.gif"><img src="../images/weather img.webp" width="100px" height="150px"></a>
+                    <div class="desc">User 5</div>
+                    </div>
+
+                    <div class="stories">
+                    <a href="tree img.jpg"><img src="../images/wallpaper.jpg" width="100px" height="150px"></a>
+                    <div class="desc">User 6</div>
+                    </div>
+                 <div class="stories">
+                    <a href="img5.jpg"><img src="../images/img5.jpg" width="100px" height="150px"></a>
+                    <div class="desc">User 7</div>
+                 </div>
+                 <div class="stories">
+                    <a href="img6.jpg"><img src="../images/img6.jpg" width="100px" height="150px"></a>
+                    <div class="desc">User 7</div>
+                 </div>
+                 <div class="stories">
+                    <a href="img7.jpg"><img src="../images/img7.jpg" width="100px" height="150px"></a>
+                    <div class="desc">User 8</div>
+                 </div>
+              </div>
+                     <hr>
+              
+              <div class="post">
+                <h2>Create Post</h2>
+                <div class="textarea">
+                    
+                <input type="text" placeholder="Write something..." style="width: 370px; height: 50px; border-radius: 15px; padding: 10px; border: 2px solid silver;">
+                
+                </div>
+                <div class="icon">
+                <i class="fa-solid fa-image" ></i>
+               <span>Images</span>
+               <i class="fa-solid fa-video"></i>
+               <span>Videos</span>
+               <i class="fa-solid fa-location-crosshairs"></i>
+               <span>Location</span>
+               <i class="fa-solid fa-face-smile"></i>
+               <span>GIF</span>
+                </div>
+                <button type="onclick" style="width: 100px; height: 40px; margin-top: 10px; background-color: dodgerblue; color: white; border-radius: 15px; font-size: 18px;">Post</button>
+            </div>
+            
+            <div class="content">
+                
+                    <img src="../images/img2.jpg" style="width: 30px; height: 30px; border-radius: 50%;">
+                    <Span style="font-size: 18px; font-weight: bold;">User 1</Span><br>
+            
+                    <span style="font-size: 12px; color: gray; margin-left: 20px;">3hrs ago</span>
+                    <br><br>
+                    <img src="../images/weather img.webp" width="500px" height="250px" style="box-shadow: 2px 2px 2px 2px gray; padding: 10px;"><br>
+
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span style="padding: 10px;">Like</span>
+                    <input type="text" placeholder="Write comment" style="width: 300px; height: 30px; padding: 10px; margin-left: 20px; border: 2px solid silver ; border-radius: 15px;">
+            
+                    <i class="fa-solid fa-share"></i>
+                    <span style="padding: 10px;">Share</span>
+                
+              </div> 
+            
+              
+              
+
+    </body>
+</html>

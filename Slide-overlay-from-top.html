@@ -1,0 +1,47 @@
+<!Doctype html>
+<htmL>
+    <head>
+        <style>
+             .container{
+                position: relative;
+                width: 50%;
+             }
+             .image{
+                display: block;
+                width: 100%;
+                height: auto;
+             }
+             .overlay{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 100%;
+                transition: .5s ease;
+                background-color: green;
+                overflow: hidden;
+             }
+             .container:hover .overlay{
+                bottom: 0;
+                height: 100%;
+             }
+             .text{
+                  position: absolute;
+                  font-size: 35px;
+                  color: white;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                
+             }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="../images/img2.jpg" class="image">
+            <div class="overlay">
+                <div class="text">Hello</div>
+            </div>
+
+        </div>
+    </body>
+</htmL>

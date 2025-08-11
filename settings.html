@@ -1,0 +1,336 @@
+<!Doctype html>
+<html>
+    <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <style>
+            *{
+               box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar{
+             display: flex;
+             justify-content: space-between;
+             background-color: dodgerblue;
+            }
+            .logo{
+                padding: 10px;
+                font-size: 35px;
+                color: white;
+                margin: 10px;
+            }
+            .options a{
+                 
+                 padding: 5px;
+                 font-size: 20px;
+                 text-decoration: none;
+                 color: white;
+            }
+            .options{
+                padding: 20px;
+            }
+            .options a:hover{
+                color: #f1f1f1;
+                text-decoration: underline;
+            }
+            .fa-house, .fa-user, .fa-gear, .fa-user-group{
+                padding: 5px;
+                margin: 5px;
+                color: white;
+            }
+            .nav, .logo-bar{
+                margin: 20px;
+            }
+           .stories {
+            display: inline-block;
+            padding: 8px;
+            background-color: white;
+        
+           }
+           .stories img{
+            border-radius: 25px;
+            box-shadow: 3px 2px 3px 2px black;
+            padding: 8px;
+           }
+           .desc{
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid dodgerblue;
+            padding: 2px;
+            margin-top: 10px;
+            font-weight: bold;
+           }
+          .post{
+            padding: 10px;
+            float: left;
+            
+            
+          }
+          .fa-image, .fa-video, .fa-location-crosshairs, .fa-face-smile{
+            padding: 20px;
+            font-size: 15px;
+            color: blue;
+          }
+          .sidebar{
+              padding: 15px;
+          }
+          ul{
+            list-style-type: none;
+        
+          }
+          li{
+            padding: 5px;
+          }
+          li a{
+            text-decoration: none;
+            
+          }
+          .sidebar{
+            float: left;
+            
+            
+            background-color: #f1f1f1;
+            padding-bottom: 480px;
+            margin-right: 40px;
+            padding-right: 150px;
+             
+          }
+          .floatright{
+          display: flex;
+          justify-content: flex-end;
+          
+         
+          
+          }
+          .switch{
+              position: relative;
+              display: inline-block;
+              width: 50px;
+              height: 24px;
+              
+          }
+          .slider{
+             position: absolute;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             background-color: #ccc;
+             transition: 0.4s;
+             border-radius: 24px;
+          }
+          .slider:before{
+            position: absolute;
+            content: "";
+            width: 18px;
+            height: 18px;
+            left: 4px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+          }
+          input:checked + .slider{
+            background-color: blue;
+          }
+          input:checked + .slider:before{
+            transform: translateX(26px);
+          }
+        
+          
+          </style>
+          </head>
+      <body>
+           <div class="navbar">
+            
+            <div class="logo">facebook</div>
+            <div class="logo-bar">
+                <input type="text" placeholder="search" style="width: 200px; height: 30px; border-radius: 15px; border-color: dodgerblue;">
+            </div>
+            <div class="options">
+                    <i class="fa-regular fa-house"></i><a href="index.html">Home</a>
+                    <i class="fa-regular fa-user"></i><a href="Profile-page.html">Edit Profile</a>
+                    <i class="fa-solid fa-user-group"></i><a href="Create-groups.html">Create Groups</a>
+                    <i class="fa-solid fa-gear"></i><a href="settings.html">Settings</a>
+
+                </div>
+            </div>
+
+
+            <div class="sidebar">
+                <i class="fa-solid fa-gear" style="font-size: 65px; color: grey; padding-left: 90px; margin-top: 50px;"></i>
+                <h2 style="color: gray; margin-left: 80px;">Settings</h2>
+                <ul style="margin-left: 30px;">    
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Security</a></li>  
+                </ul>
+            </div>
+
+
+            
+                  <div class="sidebar-setting">
+                    <h2>Privacy Settings</h2>
+
+                    <div class="option">
+                     <label>Profile Visible to public</label>
+                     <div class="floatright">
+                     <label class="switch">
+                     <input type="checkbox">
+                     <span class="slider round"></span>
+                     </label>
+                    </div>
+     </div>
+                    <div class="option">
+                        <label>Everyone can see your friend list?</label>
+                        <div class="floatright">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
+                    </div>
+
+
+                    <div class="option">
+                        <label>Everyone can see your email and phone number?</label>
+                        <div class="floatright">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span> 
+                        </label>   
+                    </div>
+                    </div>
+
+                    <div class="sidebar-setting">
+                        <h2>Notifications</h2>
+                        <div class="option">
+                            <label>Email Notifications</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                           </label>
+                        </div>
+                        </div>
+
+                        <div class="option">
+                            <label>SMS alert</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                        </div>
+                        </div>
+
+                        <div class="option">
+                            <label>New Likes</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+                         
+                        <div class="option">
+                            <label>New Likes On page post</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+
+                        <div class="option">
+                            <label>New Page Mention</label>
+                            <div class="floatright">
+                            <label class="switch">
+                                <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+
+                         <div class="option">
+                            <label>New Page Review</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+
+
+                        <div class="option">
+                            <label>New Page Comments</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+
+                        <div class="option">
+                            <label>New Followers of page</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+
+                        <div class="option">
+                            <label>New Likes on post page</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-setting">
+                        <h2>Security Setting</h2>
+                        <div class="option">
+                            <label>Login alerts</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+                        
+                        <div class="option">
+                            <label>Login Approvals</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+
+                        <div class="option">
+                            <label>App Password</label>
+                            <div class="floatright">
+                            <label class="switch">
+                           <input type="checkbox">
+                           <span class="slider round"></span>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+            </div>
+      </body>
+          </html>
+            
